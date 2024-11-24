@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayer Times</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Prayer Times</h1>
+        <p id="title">Accurate Prayer Times in Casablanca</p>
+    </header>
+
+    <div class="container">
+        <div class="selection">
+            <label for="city">Select Your City:</label>
+            <select id="city" onchange="handleCityChange(this)">
+                <option value="MA|casablanca">Casablanca</option>
+                <option value="EG|cairo">Cairo</option>
+                <option value="SA|riyadh">Riyadh</option>
+                <option value="TR|istanbul">Istanbul</option>
+            </select>
+        </div>
+
+        <div class="date-container">
+            <span>Hijri Date: <strong id="hijri-date">-</strong></span>
+            <span>Gregorian Date: <strong id="gregorian-date">-</strong></span>
+        </div>
+        <div class="city-name">
+            <p><strong id="city-name">Casablanca</strong></p>
+        </div>
+
+        <div class="prayer-times">
+            <div class="prayer-card">
+                <h2>Fajr</h2>
+                <p id="Fajr">-</p>
+            </div>
+            <div class="prayer-card">
+                <h2>Sunrise</h2>
+                <p id="Sunrise">-</p>
+            </div>
+            <div class="prayer-card">
+                <h2>Dhuhr</h2>
+                <p id="Dhuhr">-</p>
+            </div>
+            <div class="prayer-card">
+                <h2>Asr</h2>
+                <p id="Asr">-</p>
+            </div>
+            <div class="prayer-card">
+                <h2>Maghrib</h2>
+                <p id="Maghrib">-</p>
+            </div>
+            <div class="prayer-card">
+                <h2>Isha</h2>
+                <p id="Isha">-</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Sponsored by <a href="#">El Mostafi Mohamed</a>
+    </footer>
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
